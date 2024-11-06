@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mocambo Grita & Broto Pizzaria</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Odin+Rounded:wght@400&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Página Inicial -->
+  <div id="initial-screen">
+    <div class="logo-container">
+      <img src="mocambo_logo.png" alt="Logo Mocambo Grita" class="fade-in">
+      <img src="broto_logo.png" alt="Logo Broto Pizzaria" class="fade-in">
+    </div>
+    <h2 id="subtitle" class="typing">Onde a <strong>música</strong> <strong>encontra</strong> o sabor</h2>
+  </div>
+
+  <!-- Pop-up de Boas-vindas -->
+  <div id="welcome-popup">
+    <p>Queremos saber o que fez o nosso evento especial para você! Suas experiências e impressões são importantes para continuarmos criando momentos inesquecíveis. Vamos conversar?</p>
+    <button id="close-popup">Fechar</button>
+  </div>
+
+  <!-- Pesquisa de Satisfação -->
+  <div id="survey-section">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZ1lhc3YYtgd_ZMIxkEqlPX10tRlT-sS-R-h5jXWwTFtxGgg/viewform?embedded=true" width="100%" height="800px" frameborder="0">Loading…</iframe>
+    <p id="thanks-message">Obrigado por responder! Tire um print da página a seguir e no próximo evento, levando um amigo, você garante a sua dose dupla até 20h.</p>
+  </div>
+
+  <!-- Exibição de Fotos -->
+  <div id="photo-gallery">
+    <img src="cover_photo.jpg" alt="Foto do Evento" class="large-photo">
+    <div class="grid-gallery">
+      <!-- Placeholder para fotos do evento -->
+      <img class="lazy" data-src="photo1.jpg" alt="Foto 1">
+      <img class="lazy" data-src="photo2.jpg" alt="Foto 2">
+      <!-- Adicione mais fotos conforme necessário -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
